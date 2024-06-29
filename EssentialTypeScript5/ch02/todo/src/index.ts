@@ -1,4 +1,4 @@
-// Listing 2.13 Testing the data model in the index.ts file in the src folder
+// Listing 2.14 Adding a statement in the index.ts file in the src folder
 
 import { TodoItem } from "./todoItem" ;
 import { TodoCollection } from "./todoCollection" ;
@@ -18,3 +18,4 @@ console.log(`${collection.userName}'s Todo List`);
 let newId = collection.addTodo("Go for run");
 let todoItem = collection.getTodoById(newId);
 todoItem.printDetails();
+collection.addTodo(todoItem);
