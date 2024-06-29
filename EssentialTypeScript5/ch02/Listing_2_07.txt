@@ -1,0 +1,4 @@
+Listing 2.7 The contents of the index.ts file in the src folder.
+
+console.clear();
+console.log("Adam's Todo List");
