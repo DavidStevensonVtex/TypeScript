@@ -1,0 +1,10 @@
+Listing 2.6 The contents of the tsconfig.json file in the todo folder
+
+{
+    "compilerOptions": {
+        "target": "ES2022",
+        "outDir": "./dist",
+        "rootDir": "./src",
+        "module": "CommonJS"
+    }
+}
