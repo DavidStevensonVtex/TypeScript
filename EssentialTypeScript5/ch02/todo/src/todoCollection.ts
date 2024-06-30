@@ -1,6 +1,6 @@
-// Listing 2.25 Using a shape type in the todoColllection.ts file in the src folder
+// Listing 2.30 Adding a file extension in the todoCollection.ts file in the src folder
 
-import { TodoItem } from "./todoItem";
+import { TodoItem } from "./todoItem.js";
 
 type ItemCounts = {
     total: number,
