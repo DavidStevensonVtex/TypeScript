@@ -1,4 +1,4 @@
-// Listing 2.23 Testing item removal in the index.ts file in the src folder
+// Listing 2.26 Displaying item counts in the index.ts file in the src folder
 
 import { TodoItem } from "./todoItem";
 import { TodoCollection } from "./todoCollection";
@@ -13,17 +13,16 @@ let todos: TodoItem[] = [
 let collection: TodoCollection = new TodoCollection("Adam", todos);
 
 console.clear();
-console.log(`${collection.userName}'s Todo List`);
+// console.log(`${collection.userName}'s Todo List`);
+console.log(`${collection.userName}'s Todo List ` +
+    `(${collection.getItemCounts().incomplete} items to do)`);
 
-// let newId = collection.addTodo("Go for run");
-// let todoItem = collection.getTodoById(newId);
-// todoItem.printDetails();
-// collection.addTodo(todoItem);
-collection.removeComplete();
+// collection.removeComplete();
 collection.getTodoItems(true).forEach(item => item.printDetails());
 
 // output
-// Adam's Todo List
+// Adam's Todo List (3 items to do)
 // 1       Buy Flowers
 // 2       Get Shoes
 // 3       Collect Tickets
+// 4       Call Joe        (complete)
