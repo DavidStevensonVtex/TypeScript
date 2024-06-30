@@ -8,3 +8,14 @@
         "module": "Node16"
     }
 }
+
+tsc
+src/index.ts:3:26 - error TS2835: Relative import paths need explicit file extensions in EcmaScript imports when '--moduleResolution' is 'node16' or 'nodenext'. Did you mean './todoItem.js'?
+
+3 import { TodoItem } from "./todoItem";
+                           ~~~~~~~~~~~~
+
+src/index.ts:4:32 - error TS2835: Relative import paths need explicit file extensions in EcmaScript imports when '--moduleResolution' is 'node16' or 'nodenext'. Did you mean './todoCollection.js'?
+
+4 import { TodoCollection } from "./todoCollection";
+                                 ~~~~~~~~~~~~~~~~~~
