@@ -1,0 +1,4 @@
+// Listing 2.31 Adding file extensions in the index.ts file in the src folder
+
+import { TodoItem } from "./todoItem.js";
+import { TodoCollection } from "./todoCollection.js";

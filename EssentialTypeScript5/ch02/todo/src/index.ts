@@ -1,7 +1,7 @@
-// Listing 2.26 Displaying item counts in the index.ts file in the src folder
+// Listing 2.31 Adding file extensions in the index.ts file in the src folder
 
-import { TodoItem } from "./todoItem";
-import { TodoCollection } from "./todoCollection";
+import { TodoItem } from "./todoItem.js";
+import { TodoCollection } from "./todoCollection.js";
 
 let todos: TodoItem[] = [
     new TodoItem(1, "Buy Flowers"),
