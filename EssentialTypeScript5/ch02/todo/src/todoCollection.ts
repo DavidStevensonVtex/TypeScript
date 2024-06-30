@@ -1,4 +1,4 @@
-// Listing 2.30 Adding a file extension in the todoCollection.ts file in the src folder
+// Listing 2.45 Changing access control in the todoCollection.ts file in the src folder
 
 import { TodoItem } from "./todoItem.js";
 
@@ -9,7 +9,7 @@ type ItemCounts = {
 
 export class TodoCollection {
     private nextId: number = 1;
-    private itemMap = new Map<number, TodoItem>();
+    protected itemMap = new Map<number, TodoItem>();
 
     constructor(public userName: string, public todoItems: TodoItem[] = []) {
         todoItems.forEach(item => this.itemMap.set(item.id, item));
