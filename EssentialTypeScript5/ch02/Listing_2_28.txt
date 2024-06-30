@@ -1,3 +1,5 @@
+// Listing 2.28  Adding a configuration property ("type": "module") in the package.json file in the todo folder
+
 {
   "name": "todo",
   "version": "1.0.0",
