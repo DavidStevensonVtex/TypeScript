@@ -24,6 +24,9 @@ console.log(`Boots Prototype: ${bootsPrototype}`);
 
 console.log(`Common prototype: ${hatPrototype === bootsPrototype}`);
 
+console.log(`Hat: ${hat.price}, ${hat.getPriceIncTax()}`);
+console.group(`toString: ${hat.toString()}`);
+
 // Output
 // Hat Prototype: [object Object]
 // Boots Prototype: [object Object]
