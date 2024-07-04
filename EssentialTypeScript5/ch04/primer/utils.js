@@ -1,6 +1,6 @@
 // Listing 4.32 The contents of the utils.js file in the primer folder
 
-import { calculateTax } from "./tax";
+import { calculateTax } from "./tax.js";
 
 export function printDetails(product) {
     let taxedPrice = calculateTax(product.price);
