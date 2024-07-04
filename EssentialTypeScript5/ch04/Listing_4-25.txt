@@ -1,3 +1,5 @@
+Listing 4.25 Setting the module type in the package.json file in the primer folder
+
 {
   "name": "primer",
   "version": "1.0.0",
