@@ -1,0 +1,9 @@
+Listing 5.3 The contents of the tsconfig.json file in the tools folder
+
+{
+    "compilerOptions": {
+        "target": "ES2022",
+        "outDir": "./dist",
+        "rootDir": "./src"
+    }
+}
