@@ -1,3 +1,5 @@
+Listing 5.11 Using noEmitOnError configuration option in the tsconfig.json file in the tools folder
+
 {
     "compilerOptions": {
         "target": "ES2022",
