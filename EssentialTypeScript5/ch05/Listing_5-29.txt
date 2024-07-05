@@ -1,0 +1,24 @@
+Listing 5.29 Changing the module format in the package.json file in the tools folder
+"module": "commonjs"
+
+{
+    "compilerOptions": {
+        "target": "ES2022",
+        "outDir": "./dist",
+        "rootDir": "./src",
+        "noEmitOnError": true,
+        // "lib": [ "es5", "dom", "es2015.collection" ]
+        "module": "commonjs"
+    }
+}
+
+file:///D:/drs/TypeScript/GitHub/TypeScript/EssentialTypeScript5/ch05/tools/dist/index.js:3
+Object.defineProperty(exports, "__esModule", { value: true });
+                      ^
+
+ReferenceError: exports is not defined in ES module scope
+This file is being treated as an ES module because it has a '.js' file extension and 'D:\drs\TypeScript\GitHub\TypeScript\EssentialTypeScript5\ch05\tools\package.json' contains "type": "module". To treat it as a CommonJS script, rename it to use the '.cjs' file extension.
+    at file:///D:/drs/TypeScript/GitHub/TypeScript/EssentialTypeScript5/ch05/tools/dist/index.js:3:23
+    at ModuleJob.run (node:internal/modules/esm/module_job:194:25)
+
+Node.js v18.17.0
