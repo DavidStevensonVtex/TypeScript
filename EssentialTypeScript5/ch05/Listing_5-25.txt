@@ -1,0 +1,19 @@
+Listing 5.25 Changing the configuration in the tsconfig.json file in the tools folder
+
+{
+    "compilerOptions": {
+        "target": "ES2022",
+        "outDir": "./dist",
+        "rootDir": "./src",
+        "noEmitOnError": true,
+        // "lib": [ "es5", "dom", "es2015.collection" ]
+    }
+}
+
+(node:7676) Warning: To load an ES module, set "type": "module" in the package.json or use the .mjs extension.
+(Use `node --trace-warnings ...` to show where the warning was created)
+D:\drs\TypeScript\GitHub\TypeScript\EssentialTypeScript5\ch05\tools\dist\index.js:2      
+import { sum } from "./calc";
+^^^^^^
+
+SyntaxError: Cannot use import statement outside a module
