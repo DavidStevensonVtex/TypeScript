@@ -1,3 +1,5 @@
+Listing 6.12 Disabling a linter rule in the .eslintrc file in the tools folder
+
 {
     "root": true,
     "ignorePatterns": [ "node_modules", "dist" ],
@@ -17,3 +19,6 @@
         "prefer-const": 0
     }
 }
+
+npx eslint .
+  10:1  error  Unexpected 'debugger' statement  no-debugger
