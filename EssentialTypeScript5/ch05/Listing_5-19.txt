@@ -1,3 +1,6 @@
+Listing 5.19 Selecting a target JavaScript version in the tsconfig.json file in the tools folder
+"target": "ES5"
+
 {
     "compilerOptions": {
         "target": "ES5",
