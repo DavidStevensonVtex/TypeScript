@@ -1,3 +1,5 @@
+Listing 5.22 Changing the configuration in the tsconfig.json file in the tools folder
+
 {
     "compilerOptions": {
         "target": "ES5",
@@ -7,3 +9,8 @@
         "lib": [ "es5", "dom", "es2015.collection" ]
     }
 }
+
+Output (no compiler errors)
+Message: Hello, TypeScript
+Bob lives in London
+Alice lives in Paris
