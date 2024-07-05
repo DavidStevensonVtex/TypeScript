@@ -1,3 +1,5 @@
+Listing 5.17 Adding to the scripts section of the package.json file in the tools folder
+
 {
   "name": "tools",
   "version": "1.0.0",
