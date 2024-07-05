@@ -1,12 +1,10 @@
-// Listing 5.16 Making a change in the index.ts file in the src folder
+// Listing 5.20 Using modern features in the index.ts file in the src folder
 
-function printMessage(msg: string): void {
+let printMessage = (msg: string): void =>
     console.log(`Message: ${msg}`);
-}
 
-printMessage("Hello, TypeScript");
-printMessage("It is sunny today");
+let message = ("Hello, TypeScript");
+printMessage(message);
 
 // Output
 // Message: Hello, TypeScript
-// Message: It is sunny today
