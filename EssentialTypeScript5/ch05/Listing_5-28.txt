@@ -1,3 +1,6 @@
+Listing 5.28 Selecting a module format in the tsconfig.json file in the tools folder
+"module": "Node16"
+
 {
     "compilerOptions": {
         "target": "ES2022",
