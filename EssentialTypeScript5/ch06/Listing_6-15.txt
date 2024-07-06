@@ -1,0 +1,6 @@
+Listing 6.15 The contents of the jest.config.js file in the tools folder
+
+module.exports = {
+    "roots": [ "src" ],
+    "transform": [ "^.+\\.tsx?$": "ts-jest" ]
+}
