@@ -20,3 +20,11 @@ console.log(`Name: ${personVal}`);
 // Full amount in tax: $120.00
 // Half share: NaN
 // Name: $NaN
+
+index.d.ts:
+
+declare function calculateTax(amount: any): any;
+declare let price: number;
+declare let taxAmount: any;
+declare let halfShare: number;
+declare let personVal: any;
