@@ -1,0 +1,16 @@
+Listing 7.20 Configuring the compiler in the tsconfig.json file in the types folder
+"noImplicitAny": true
+
+{
+    "compilerOptions": {
+        "target": "ES2022",
+        "outDir": "./dist",
+        "rootDir": "./src",
+        "declaration": true,
+        "noImplicitAny": true
+    }
+}
+
+src/index.ts(3,23): error TS7006: Parameter 'amount' implicitly has an 'any' type.
+
+11:13:27 AM - Found 1 error. Watching for file changes.
