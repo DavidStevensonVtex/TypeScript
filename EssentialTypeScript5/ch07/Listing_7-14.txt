@@ -1,0 +1,18 @@
+Listing 7.14 Configuring the compiler in the tsconfig.json file in the types folder
+"declaration": true
+
+{
+    "compilerOptions": {
+        "target": "ES2022",
+        "outDir": "./dist",
+        "rootDir": "./src",
+        "declaration": true
+    }
+}
+
+dist/index.d.ts
+
+declare function calculateTax(amount: number): string;
+declare let price: number;
+declare let taxAmount: string;      // This is a wrong type
+declare let halfShare: number;
