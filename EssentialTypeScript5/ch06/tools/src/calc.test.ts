@@ -1,6 +1,6 @@
 // Listing 6.16 The contents of the calc.test.ts file in the src folder
 
-import { sum } from "./calc";
+import { sum } from "./calc.js";
 
 test("check result value", () => {
     let result = sum(10, 20, 30);
