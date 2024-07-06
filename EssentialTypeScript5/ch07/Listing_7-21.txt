@@ -9,3 +9,9 @@ let taxNumber = calculateTax(100, false);
 let taxString = calculateTax(100, true);
 
 // Output
+
+index.d.ts:
+
+declare function calculateTax(amount: number, format: boolean): string | number;
+declare let taxNumber: string | number;
+declare let taxString: string | number;
