@@ -14,3 +14,9 @@ console.log(`String Value: ${taxString.charAt(0)}`);
 // Output
 // Number value: 120.00
 // String Value: $
+
+index.d.ts:
+
+declare function calculateTax(amount: number, format: boolean): string | number;
+declare let taxNumber: number;
+declare let taxString: string;
