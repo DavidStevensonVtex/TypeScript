@@ -14,3 +14,10 @@ console.log(`Half share: ${halfShare}`);
 // Output
 // Full amount in tax: 120.00
 // Half share: 60
+
+index.d.ts:
+
+declare function calculateTax(amount: any): any;
+declare let price: number;
+declare let taxAmount: any;
+declare let halfShare: number;
