@@ -1,0 +1,9 @@
+Listing 7.3 The contents of the tsconfig.json file in the types folder
+
+{
+    "compilerOptions": {
+        "target": "ES2022",
+        "outDir": "./dist",
+        "rootDir": "./src"
+    }
+}
