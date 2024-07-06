@@ -1,6 +1,6 @@
 // Listing 7.15 Adding a statement to the index.ts file in the src folder
 
-function calculateTax(amount: any): any {
+function calculateTax(amount) {
     return (amount * 1.2).toFixed(2);
 }
 
