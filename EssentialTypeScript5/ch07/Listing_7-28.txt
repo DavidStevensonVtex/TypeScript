@@ -14,12 +14,10 @@ switch (typeof taxValue) {
     case "string":
         console.log(`String Value: ${taxValue.charAt(0)}`);
         break;
-    case "never":
+    default:
         let value: never = taxValue;
         console.log(`Unexpected type for value: ${value}`);
 }
 
 // Output
-// src/index.ts(17,10): error TS2678: Type '"never"' is not comparable to type '"string" | "number" | "bigint" | "boolean" | "symbol" | "undefined" | "object"     th | "function"'.
-
-// 2:14:43 PM - Found 1 error. Watching for file changes.
+// Number Value: 120.00
