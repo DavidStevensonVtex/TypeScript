@@ -1,0 +1,17 @@
+Listing 8.15 Changing the compiler configuration tsconfig.json file in the types folder
+"noImplicitReturns": true
+
+{
+    "compilerOptions": {
+        "target": "ES2022",
+        "outDir": "./dist",
+        "rootDir": "./src",
+        "declaration": true,
+        "strictNullChecks": true,
+        "noImplicitReturns": true
+    }
+}
+
+src/index.ts(3,10): error TS7030: Not all code paths return a value.
+
+12:48:45 PM - Found 1 error. Watching for file changes.
