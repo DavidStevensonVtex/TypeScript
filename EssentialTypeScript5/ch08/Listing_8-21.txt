@@ -6,7 +6,7 @@ function check(expression: boolean) {
     }
 }
 
-function calculateTax(amount: number | null): number | null {
+function calculateTax(amount: number | null): number {
     check(typeof amount == "number");
     return amount * 1.2;
 }
@@ -20,7 +20,5 @@ writeValue("Tax value", taxAmount);
 
 // Output
 // src/index.ts(11,12): error TS18047: 'amount' is possibly 'null'.
-// src/index.ts(18,5): error TS2322: Type 'number | null' is not assignable to type 'number'.
-//   Type 'null' is not assignable to type 'number'.
 
-// 1:12:26 PM - Found 2 errors. Watching for file changes.
+// 1:15:52 PM - Found 1 error. Watching for file changes.
