@@ -5,7 +5,7 @@ function calculateTax(amount) {
 }
 
 function calculateTax(amount, discount) {
-    return (amount * 1.2) - discount;
+    return calculateTax(amount) - discount;
 }
 
 
