@@ -1,3 +1,5 @@
+Listing 8.2 Disabling compiler options in the tsconfig.json file in the types folder
+
 {
     "compilerOptions": {
         "target": "ES2022",
@@ -8,3 +10,6 @@
         // "strictNullChecks": true
     }
 }
+
+11:43:09 AM - Found 0 errors. Watching for file changes.
+Total Amount: 120
