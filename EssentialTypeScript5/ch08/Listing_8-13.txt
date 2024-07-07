@@ -1,0 +1,15 @@
+Listing 8.13 Changing the compiler option in the tsconfig.json file in the types folder
+
+{
+    "compilerOptions": {
+        "target": "ES2022",
+        "outDir": "./dist",
+        "rootDir": "./src",
+        "declaration": true,
+        "strictNullChecks": true
+    }
+}
+
+src/index.ts(9,29): error TS2345: Argument of type 'null' is not assignable to parameter of type 'number'.
+
+12:38:39 PM - Found 1 error. Watching for file changes.
