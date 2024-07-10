@@ -12,7 +12,7 @@ let prices: number[] = [100, 75, 42];
 let names: string[] = ["Hat", "Gloves", "Umbrella"];
 
 for (let i = 0; i < 3; i++) {
-    writePrice(names[i], calculateTax(prices[0]));
+    writePrice(names[i], calculateTax(prices[i]));
 }
 
 // Output
