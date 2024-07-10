@@ -1,3 +1,5 @@
+Listing 9.2 Disabling compiler options in the tsconfig.json file in the types folder
+
 {
     "compilerOptions": {
         "target": "ES2022",
