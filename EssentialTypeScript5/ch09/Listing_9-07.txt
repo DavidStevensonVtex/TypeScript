@@ -21,3 +21,6 @@ prices.forEach((price, index) => {
 //   Type 'string' is not assignable to type 'number'.
 
 // 7:53:42 PM - Found 1 error. Watching for file changes.
+
+// index.d.ts
+// declare let prices: (string | number)[];
