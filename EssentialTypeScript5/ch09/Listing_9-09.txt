@@ -1,0 +1,24 @@
+Listing 9.9 Configuring the compiler in the tsconfig.json file in the types folder
+
+{
+    "compilerOptions": {
+        "target": "ES2022",
+        "outDir": "./dist",
+        "rootDir": "./src",
+        "declaration": true,
+        "strictNullChecks": true,
+    }
+}
+
+src/index.ts(12,13): error TS2345: Argument of type 'string | number' is not assignable to parameter of type 'never'.
+  Type 'string' is not assignable to type 'never'.    
+
+8:02:28 PM - Found 1 error. Watching for file changes.
+
+Line 12: prices.push(...[100, 75, 42, "20"]);  
+
+index.d.ts:
+declare function calculateTax(amount: number): number;
+declare function writePrice(product: string, price: number): void;
+declare let prices: any[]; ???
+declare let names: string[];
