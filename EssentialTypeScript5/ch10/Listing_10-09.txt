@@ -9,3 +9,7 @@ Listing 10.9 Configuring the compiler in the tsconfig.json file in the types fol
         "strictNullChecks": true,
     }
 }
+
+src/index.ts(19,20): error TS2722: Cannot invoke an object which is possibly 'undefined'.
+
+3:59:00 PM - Found 1 error. Watching for file changes.
