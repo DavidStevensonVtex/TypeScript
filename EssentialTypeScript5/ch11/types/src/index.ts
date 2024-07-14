@@ -1,4 +1,4 @@
-// Listing 11.9 Using a private field in the index.ts file in the src folder
+// Listing 11.10 Creating a read-only prpoerty in the index.ts file in the src folder
 
 type Person = {
     id: string,
@@ -7,7 +7,7 @@ type Person = {
 }
 
 class Employee {
-    public id: string;
+    public readonly id: string;
     public name: string;
     #dept: string;
     public city: string;
@@ -25,6 +25,9 @@ class Employee {
 
 let salesEmployee = new Employee("fvega", "Fidel Vega", "Sales", "Paris");
 salesEmployee.writeDept();
+salesEmployee.id = "fidel";
 
 // Output:
-// Fidel Vega works in Sales
+// src/index.ts(28,15): error TS2540: Cannot assign to 'id' because it is a read-only property.
+
+// 12:52:08 PM - Found 1 error. Watching for file changes.
