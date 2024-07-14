@@ -1,4 +1,4 @@
-// Listing 11.12 Adding accessors in the index.ts file in the src folder
+// Listing 11.13 Adding accessor logic in the index.ts file in the src folder
 
 type Person = {
     id: string,
@@ -18,6 +18,11 @@ class Employee {
     }
 
     get location() {
+        switch (this.city) {
+            case "Paris": return "France";
+            case "London": return "UK";
+            default: return this.city;
+        }
         return this.city;
     }
 
@@ -34,5 +39,5 @@ console.log(`Location: ${salesEmployee.location}`);
 
 // Output:
 // Fidel Vega works in Sales
-// Location: Paris
-// Location: London
+// Location: France
+// Location: UK    
