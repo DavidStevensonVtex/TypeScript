@@ -1,0 +1,20 @@
+Listing 11.30 Configuring the compiler in the tsconfigjson file in the types folder
+
+{
+    "compilerOptions": {
+        "target": "ES2022",
+        "outDir": "./dist",
+        "rootDir": "./src",
+        "declaration": true,
+        "strictNullChecks": true,
+        "noUncheckedIndexedAccess": true
+    }
+}
+
+Output:
+
+4:13:19 PM - File change detected. Starting incremental compilation...
+
+src/index.ts(26,31): error TS18048: 'group.boots' is possibly 'undefined'.
+
+4:13:21 PM - Found 1 error. Watching for file changes.
