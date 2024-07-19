@@ -1,6 +1,6 @@
 // Listing 12.2 Replacing the contents of the index.ts file in the src folder
 
-import { Person, Product } from "./dataTypes";
+import { Person, Product } from "./dataTypes.js";
 
 let people = [new Person("Bob Smith", "London"),
 new Person("Dora Peters", "New York")];

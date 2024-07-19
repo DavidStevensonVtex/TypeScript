@@ -1,3 +1,5 @@
+// Listing 12.4 Configuring the compiler in the tsconfig.json file in the types folder
+
 {
     "compilerOptions": {
         "target": "ES2022",
