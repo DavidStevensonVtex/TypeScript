@@ -1,3 +1,6 @@
+// Listing 12.3 Configuring the module format in the package.json file in the types folder
+  "type": "module"
+  
 {
   "name": "types",
   "version": "1.0.0",
