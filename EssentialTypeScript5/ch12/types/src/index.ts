@@ -30,11 +30,15 @@ class DataCollection<T extends (Person | Product)> {
 let peopleData = new DataCollection<Person>(people);
 let firstPerson = peopleData.getItem(0);
 console.log(`First Person: ${firstPerson.name}, ${firstPerson.city}`);
+console.log(`Person Names: ${peopleData.getNames().join(", ")}`);
 
 let productData = new DataCollection<Product>(products);
 let firstProduct = productData.getItem(0);
 console.log(`First Product: ${firstProduct.name}, ${firstProduct.price}`);
+console.log(`Product Names: ${productData.getNames().join(", ")}`);
 
 // Output
 // First Person: Bob Smith, London
+// Person Names: Bob Smith, Dora Peters
 // First Product: Running Shoes, 100
+// Product Names: Running Shoes, Hat   
