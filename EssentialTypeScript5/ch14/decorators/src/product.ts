@@ -10,7 +10,3 @@ export class Product {
         return `Name: ${this.name}, Price: $${this.price}`;
     }
 }
-
-// src/product.ts(3,22): error TS2307: Cannot find module './methodDecorator.js' or its corresponding type declarations.
-
-// 3:19:38 PM - Found 1 error. Watching for file changes.
