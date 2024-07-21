@@ -1,0 +1,10 @@
+Listing 14.3 The contents of the tsconfig.json file in the decorators folder
+
+{
+    "compilerOptions": {
+        "target": "ES2022",
+        "outDir": "./dist",
+        "rootDir": "./src",
+        "module": "Node16"
+    }
+}
