@@ -1,3 +1,6 @@
+Listing 15.11 Changing the configuration in the tsconfig.json file in the usingjs folder
+"allowJs": true
+
 {
     "compilerOptions": {
         "target": "ES2022",
@@ -7,3 +10,7 @@
         "allowJs": true
     }
 }
+
+// Output
+// The Cart has 4 items
+// The Cart costs $341.30
