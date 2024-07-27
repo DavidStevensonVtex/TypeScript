@@ -1,0 +1,10 @@
+Listing 15.3 The contents of the tsconfig.json file in the usingjs folder
+
+{
+    "compilerOptions": {
+        "target": "ES2022",
+        "outDir": "./dist",
+        "rootDir": "./src",
+        "module": "Node16"
+    }
+}
