@@ -1,3 +1,6 @@
+Listing 15.12 Configuring the compiler in the tsconfig.json file in the usingjs folder
+        "checkJs": true
+
 {
     "compilerOptions": {
         "target": "ES2022",
@@ -8,3 +11,6 @@
         "checkJs": true
     }
 }
+
+
+Expected 0-1 arguments, but got 2.
