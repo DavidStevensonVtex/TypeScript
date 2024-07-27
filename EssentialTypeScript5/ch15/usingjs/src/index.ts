@@ -9,6 +9,7 @@ let ball = new SportsProduct(3, "Soccer Ball", 19.50, SPORT.Soccer);
 
 let cart = new Cart("Bob");
 cart.addProduct(kayak, 1);
+cart.addProduct(hat, 1);
 cart.addProduct(hat, 2);
 
 console.log(`Cart has ${cart.itemCount} items`);
