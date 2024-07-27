@@ -1,3 +1,9 @@
+Listing 15.23 Configuring the compiler in the tsconfig.json file in the usingjs folder
+        "baseUrl": ".",
+        "paths": {
+            "*": [ "types/*.d.cts", "types/*.d.mts", "types/*.d.ts" ]
+        }
+
 {
     "compilerOptions": {
         "target": "ES2022",
