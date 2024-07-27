@@ -1,6 +1,7 @@
 Listing 15.4 Configuring NPM in the package.json file in the usingjs folder
 "start": "tsc-watch --onsuccess \"node dist/index.js\""
-
+  "type": "module"
+  
 {
   "name": "usingjs",
   "version": "1.0.0",
@@ -15,5 +16,6 @@ Listing 15.4 Configuring NPM in the package.json file in the usingjs folder
   "devDependencies": {
     "tsc-watch": "^6.0.0",
     "typescript": "^5.0.2"
-  }
+  },
+  "type": "module"
 }
