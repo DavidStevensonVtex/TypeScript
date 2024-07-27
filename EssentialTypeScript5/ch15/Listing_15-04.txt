@@ -1,3 +1,6 @@
+Listing 15.4 Configuring NPM in the package.json file in the usingjs folder
+"start": "tsc-watch --onsuccess \"node dist/index.js\""
+
 {
   "name": "usingjs",
   "version": "1.0.0",
