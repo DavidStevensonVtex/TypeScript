@@ -16,7 +16,7 @@ export function autolog<This, ValueType extends number>(
             return accessor.set.call(this, value);
         },
         init(value) {
-            console.log(`Auto-accesor initialized to ${value}`);
+            console.log(`Auto-accessor initialized to ${value}`);
             return value;
         }
     }
