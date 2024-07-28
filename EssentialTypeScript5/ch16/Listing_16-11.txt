@@ -1,3 +1,5 @@
+Listing 16.11 Server configuration in the webpack.config.js file in the webapp folder
+
 module.exports = {
     mode: "development",
     devtool: "inline-source-map",
