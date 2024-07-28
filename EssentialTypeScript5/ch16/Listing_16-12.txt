@@ -1,0 +1,15 @@
+Listing 16.12 The contents of the index.html file in the webapp/assets folder
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Web App</title>
+    <script src="bundle.js"></script>
+</head>
+
+<body>
+    <div id="app">Web App Placeholder</div>
+</body>
+
+</html>
