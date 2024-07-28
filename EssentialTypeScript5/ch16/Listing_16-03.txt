@@ -1,0 +1,9 @@
+Listing 16.3 The contents of the tsconfig.json file in the webapp folder
+
+{
+    "compilerOptions": {
+        "target": "ES2022",
+        "outDir": "./dist",
+        "rootDir": "./src"
+    }
+}
