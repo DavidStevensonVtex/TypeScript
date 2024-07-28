@@ -5,10 +5,8 @@ module.exports = {
     output: { filename: "bundle.js" },
     resolve: { extensions: [ ".ts", ".js" ] },
     module: {
-        rules: {
-            rules: [
-                { test: /\.ts/, use: "ts-loader", exclude: /node_modules/ }
-            ]
-        }
+        rules: [
+            { test: /\.ts/, use: "ts-loader", exclude: /node_modules/ }
+        ]
     }
 }
