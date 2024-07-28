@@ -1,0 +1,16 @@
+Listing 16.7 The contents of the webpack.config.js file in the webapp folder
+
+module.exports = {
+    mode: "development",
+    devtool: "inline-source-map",
+    entry: "./src/index.ts",
+    output: { filename: "bundle.js" },
+    resolve: { extensions: [ ".ts", ".js" ] },
+    module: {
+        rules: {
+            rules: [
+                { test: /\.ts/, use: "ts-loader", exclude: /node_modules/ }
+            ]
+        }
+    }
+}
