@@ -1,4 +1,4 @@
-// Listing 15.32 Adding statements in the index.ts file in the src folder
+// Listing 15.34 Removing a statement in the index.ts file in the src folder
 
 import { SportsProduct, SPORT } from "./product.js";
 import { Cart } from "./cart.js";
@@ -23,10 +23,10 @@ db.enabled = true;
 db("Message: %s", "Test message");
 
 console.log(chalk.greenBright("Formatted message"));
-console.log(chalk.notAColor("Formatted message"));
+// console.log(chalk.notAColor("Formatted message"));
 
 // Output
-// src/index.ts(26,19): error TS2339: Property 'notAColor' does not exist on type 'Chalk & ChalkFunction & { supportsColor: false | ColorSupport; Level: Level;
-// Color: Color; ForegroundColor: ForegroundColor; BackgroundColor: BackgroundColor; Modifiers: Modifiers; stderr: Chalk & { ...; }; }'.
-
-// 2:27:37 PM - Found 1 error. Watching for file changes.
+// The Cart has 4 items
+// The Cart costs $341.3
+//   Example App Message: Test message +0ms
+// Formatted message
