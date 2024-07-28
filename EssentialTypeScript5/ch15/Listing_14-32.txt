@@ -26,7 +26,7 @@ console.log(chalk.greenBright("Formatted message"));
 console.log(chalk.notAColor("Formatted message"));
 
 // Output
-// src/index.ts(26,19): error TS2339: Property 'notAColor' does not exist on type 'Chalk & ChalkFunction & { supportsColor: false | ColorSupport; Level: Level;
+// src/index.ts(26,19): error TS2339: Property 'notAColor' does not exist on type 'Chalk & ChalkFunction & { supportsColor: false | ColorSupport; Level: Level; 
 // Color: Color; ForegroundColor: ForegroundColor; BackgroundColor: BackgroundColor; Modifiers: Modifiers; stderr: Chalk & { ...; }; }'.
 
 // 2:27:37 PM - Found 1 error. Watching for file changes.
