@@ -34,6 +34,8 @@ export class Order {
             } else {
                 this.lines.get(prod.id)!.quantity += quantity;
             }
+        } else {
+            this.lines.set(prod.id, new OrderLine(prod, quantity));
         }
     }
 
