@@ -9,7 +9,7 @@ export function createElement(tag: any, props: Object,
     }
 
     if (typeof tag === "function") {
-        return Object.assign(new tag(), { props: props || {} }).getContext();
+        return Object.assign(new tag(), { props: props || {} }).getContent();
     }
 
     const elem = Object.assign(document.createElement(tag), props || {});
