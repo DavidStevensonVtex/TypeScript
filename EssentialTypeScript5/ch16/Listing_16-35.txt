@@ -1,4 +1,4 @@
-// Listing 16.35 Changing props in the index.ts file in the src folder  
+// Listing 16.35 Changing props in the index.ts file in the src folder
 
 import { LocalDataSource } from "./data/localdatasource";
 import { HtmlDisplay } from "./htmlDisplay";
