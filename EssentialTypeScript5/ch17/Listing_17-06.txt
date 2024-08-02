@@ -1,0 +1,34 @@
+// Listing 17.6 The contents of the remotedatasource.ts file in the src/data folder
+
+import { AbstractDataSource } from "./abstractdatasource";
+import { Product, Order } from "./entities";
+import Axios from "axios";
+
+const protocol = "http";
+const hostname = "localhost";
+const port = 4600;
+
+const urls = {
+    products: `${protocol}://${hostname}:${port}/products`,
+    orders: `${protocol}://${hostname}:${port}/orders`
+}
+
+export class RemoteDataSource extends AbstractDataSource {
+
+    loadProducts(): Promise<Product[]> {
+        return Axios.get(urls.products).then(response => response.data);
+    }
+
+    storeOrder(): Promise<number> {
+        let orderData = {
+            lines: [...this.order.orderLines.values()].map(ol => ({
+                productId: ol.product.id,
+                productName: ol.product.name,
+                quantity: ol.quantity
+            }))
+        }
+
+        return Axios.post(urls.orders, orderData)
+            .then(response => response.data.id);
+    }
+}
