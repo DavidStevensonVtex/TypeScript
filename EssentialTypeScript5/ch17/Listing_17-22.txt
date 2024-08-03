@@ -1,0 +1,3 @@
+Listing 17.22 The contents of the .dockerignore file in the webapp folder
+
+node_modules
