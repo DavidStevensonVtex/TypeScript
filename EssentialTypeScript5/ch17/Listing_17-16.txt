@@ -1,7 +1,7 @@
 // Listing 17.16 The contents of the server.js file in the webapp folder
 
 const express = require("express");
-const jsonSrever = require("json-server");
+const jsonServer = require("json-server");
 
 const app = express();
 app.use("/", express.static("dist"));
