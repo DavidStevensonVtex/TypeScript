@@ -20,8 +20,8 @@ export class OrderDetails {
                     <thead>
                         <tr>
                             <th>Quantity</th><th>Product</th>
-                            <th className="text-right">Price</th>
-                            <th className="text-right">Subtotal</th>
+                            <th className="text-end">Price</th>
+                            <th className="text-end">Subtotal</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -29,18 +29,21 @@ export class OrderDetails {
                             <tr>
                                 <td>{line.quantity}</td>
                                 <td>{line.product.name}</td>
-                                <td className="text-right">
+                                <td className="text-end">
                                     ${line.product.price.toFixed(2)}
+                                </td>
+                                <td className="text-end">
+                                    ${line.total.toFixed(2)}
                                 </td>
                             </tr>
                         )}
                     </tbody>
                     <tfoot>
                         <tr>
-                            <th className="text-right" colSpan="3">
+                            <th className="text-end" colSpan="3">
                                 Total:
                             </th>
-                            <th className="text-right">
+                            <th className="text-end">
                                 ${this.props.order.total.toFixed(2)}
                             </th>
                         </tr>
@@ -48,7 +51,7 @@ export class OrderDetails {
                 </table>
             </div>
             <div className="text-center">
-                <button clasName="btn btn-secondary m-1" onclick={this.props.cancelCallback}>
+                <button className="btn btn-secondary m-1" onclick={this.props.cancelCallback}>
                     Back
                 </button>
                 <button className="btn btn-primary m-1" onclick={this.props.submitCallback}>
