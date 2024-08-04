@@ -15,6 +15,7 @@ export const dataStore = configureStore({
     middleware: (getDefaultMiddleware) =>
         getDefaultMiddleware()
             .concat(productsApi.middleware)
+            .concat(ordersApi.middleware)
 
 });
 
